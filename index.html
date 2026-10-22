@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f7">
+  <title>عبدو وجنتي ♥</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+
+  <main class="page">
+    <section class="login-card" id="loginCard">
+      <div class="big-heart">♥</div>
+      <p class="eyebrow">مكاننا الصغير في الدنيا</p>
+      <h1>الموقع ده لينا إحنا وبس 💗</h1>
+      <p class="muted">اكتب كلمة السر عشان تفتح عالمنا الصغير</p>
+      <form id="loginForm">
+        <label class="sr-only" for="password">كلمة المرور</label>
+        <input id="password" type="password" inputmode="numeric" placeholder="كلمة المرور" autocomplete="off" required>
+        <button type="submit">افتح قلبنا ♥</button>
+        <p id="error" class="error" role="alert"></p>
+      </form>
+      <small>تلميح: تاريخنا المميز 💞</small>
+    </section>
+
+    <section class="love-card hidden" id="loveCard">
+      <div class="top-line">عبدو <span>♥</span> جنتي</div>
+      <p class="eyebrow">من يوم ما حكايتنا بدأت</p>
+      <h1>كل يوم معاكي هو أجمل حكاية يا جنتي 💗</h1>
+      <p class="quote">"وسط كل الناس، قلبي اختارك إنتِ… وكل يوم بيعدّي بحبك أكتر."</p>
+
+      <section class="music-box" aria-label="الموسيقى">
+        <div class="music-icon">♫</div>
+        <div class="music-copy">
+          <strong>أغنيتنا المفضلة 🎵</strong>
+          <span>💗</span>
+        </div>
+        <audio id="loveAudio" preload="auto" loop>
+          <source src="music/our-song.mp3" type="audio/mpeg">
+        </audio>
+        <button id="musicButton" type="button" class="music-button">▶ تشغيل الصوت</button>
+      </section>
+
+      <div class="timer-wrap">
+        <h2>بقالنا مع بعض</h2>
+        <div class="timer" aria-live="polite">
+          <div><strong id="days">0</strong><span>يوم</span></div>
+          <div><strong id="hours">00</strong><span>ساعة</span></div>
+          <div><strong id="minutes">00</strong><span>دقيقة</span></div>
+          <div><strong id="seconds">00</strong><span>ثانية</span></div>
+        </div>
+        <p class="since">من يوم 29 أغسطس 2025 ♥</p>
+      </div>
+
+      <h2 class="section-title">ذكرياتنا الحلوة 📸</h2>
+      <p class="muted">بحبك يجنجوني💗</p>
+      <div class="photos">
+        <figure><img src="photos/photo1.jpg" alt="ذكرياتنا سوا" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder">صورتنا الأولى 💕</div><figcaption>ذكرياتنا الحلوة 💞</figcaption></figure>
+        <figure><img src="photos/photo2.jpg" alt="لحظاتنا المميزة" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder">صورتنا التانية 💗</div><figcaption>أجمل لحظاتنا 💗</figcaption></figure>
+      </div>
+
+      <h2 class="section-title">كلام من قلبنا 💌</h2>
+      <p class="muted"></p>
+      <div class="chat-memories" id="chatMemories">
+        <article class="memory-message received">لحد آخر العمر إن شاء الله، وأنا جاي أتقدملك 💗<span> </span></article>
+        <article class="memory-message received">بحبكك اكتررر ❤️<span>4:07 AM</span></article>
+        <article class="memory-message sent">بحبكك يا روح قلبيبي ونور عينيي ❤️<span>4:07 AM ✓✓</span></article>
+        <article class="memory-message received">وحشتتتتتتتتتتتتت ❤️<span>3:35 AM</span></article>
+        <article class="memory-message sent">وحشتيني اويييي انتي كمان ❤️<span>3:35 AM ✓✓</span></article>
+        <article class="memory-message received">قرههه عينيييي ❤️<span>3:35 AM</span></article>
+        <article class="memory-message sent">روحييييي ❤️<span>3:35 AM ✓✓</span></article>
+      </div>
+
+      <div class="note">
+        <div class="note-heart">♥</div>
+        <h2>لجنتي من عبدو</h2>
+        <p>يمكن الكلام ما يوصفش قد إيه إنتي غالية عندي، بس أتمنى كل مرة تفتحي فيها الموقع ده تفتكري إن فيه قلب بيفرح بوجودك، وبيتمنى لك كل الخير والسعادة.</p>
+        <p class="signature">بحبك يا جنتي 💞</p>
+      </div>
+      <button class="logout" id="lockButton" type="button">اقفل الصفحة 🔒</button>
+    </section>
+    <footer>اتعمل بحب من عبدو لجنتي ♥</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
